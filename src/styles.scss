@@ -1,4 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
 
 //@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@use "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@use "./../public/stylesheets/NewStyleSheet.css";
+// @use "./../public/stylesheets/owl.carousel.css";
+
+/*  --------------------------------
+    --------------------------------
+           Custom Bootstrap
+    --------------------------------
+    --------------------------------*/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    margin-bottom: 0px;
+	min-height:unset;
+}
+
+.navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-weight: 400;
+    font-size: 18px;
+    color: #00A0FF;
+    padding: 15px 20px;
+    text-align: center;
+	position:relative;
+}
+
+    .navbar-default .navbar-nav > li > a > small {
+        font-size: 14px;
+		/*position:absolute;*/
+        opacity:.3;
+    }
+    /*.navbar-default .navbar-nav > li > a:hover small {
+        display:block;
+    }*/
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background: none;
+    border-top: 2px solid #ffb200;
+}
+
+ul.navbar-right li a {
+    background: #FFC345;
+    color: #fff;
+}
+
+
+
